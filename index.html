@@ -195,8 +195,8 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
+								<h2>Get in touch <div id="form-messages"></div> </h2>
+								<form id= "ajax-coontact" method="post" action="mailer.php">
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
@@ -208,9 +208,9 @@
 											<textarea name="message" id="message" placeholder="Message"></textarea>
 										</div>
 									</div>
-									<ul class="actions">
+									<div class="field">
 										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
+									</div>
 								</form>
 							</section>
 							<section>
@@ -241,6 +241,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="app.js"></script>
 
 	</body>
 </html>
